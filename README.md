@@ -11,3 +11,10 @@ Analizar la arquitectura de base de datos, la seguridad en transacciones y las i
 Para TechStore se selecciona una base de datos SQL, como PostgreSQL o MySQL, porque permite trabajar con datos estructurados, relaciones entre tablas, integridad de datos y transacciones seguras.
 
 La base de datos incluirá tablas como usuarios, productos, pedidos, transacciones e inventario.
+
+
+## Seguridad en transacciones
+
+Se consideran riesgos como inyección SQL, fraude, robo de credenciales y exposición de datos sensibles.
+
+Para reducir estos riesgos se proponen medidas como HTTPS, consultas parametrizadas, validaciones en Backend, cifrado de contraseñas, roles y permisos, logs y auditoría.
