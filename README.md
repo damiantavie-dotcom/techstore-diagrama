@@ -18,3 +18,15 @@ La base de datos incluirá tablas como usuarios, productos, pedidos, transaccion
 Se consideran riesgos como inyección SQL, fraude, robo de credenciales y exposición de datos sensibles.
 
 Para reducir estos riesgos se proponen medidas como HTTPS, consultas parametrizadas, validaciones en Backend, cifrado de contraseñas, roles y permisos, logs y auditoría.
+
+
+## Instrucciones de base de datos y validación
+
+Las instrucciones necesarias para operar la base de datos son:
+
+- DDL: CREATE, ALTER, DROP.
+- DML: SELECT, INSERT, UPDATE, DELETE.
+- DCL: GRANT, REVOKE.
+- TCL: BEGIN, COMMIT, ROLLBACK.
+
+La validación de transacciones debe confirmar el pago, registrar el pedido, descontar stock y ejecutar COMMIT si todo es correcto. Si ocurre un error, se debe ejecutar ROLLBACK.
